@@ -160,7 +160,7 @@ static DZNPhotoPickerControllerCancellationBlock _cancellationBlock;
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
         UIBarButtonItem *cancel = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Cancel", nil) style:UIBarButtonItemStylePlain target:self action:@selector(cancelPicker:)];
-        [controller.navigationItem setRightBarButtonItem:cancel];
+        [controller.navigationItem setLeftBarButtonItem:cancel];
     }
     
     [self setViewControllers:@[controller]];
